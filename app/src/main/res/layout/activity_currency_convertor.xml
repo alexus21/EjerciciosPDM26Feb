@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrencyConvertor">
+
+    <EditText
+        android:id="@+id/editTextGetAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Cantidad a convertir"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="300dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGetAmount">
+
+        <TextView
+            android:id="@+id/textViewSelectCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEuros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Euros"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMexicanPesos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesos mexicanos"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/radioButtonArgentinePesos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesos argentinos"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPoundSterling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Libras esterlinas"
+            tools:ignore="HardcodedText" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="331dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="72dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <Button
+        android:id="@+id/buttonCloseApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="Cerrar aplicación"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult"
+        tools:ignore="HardcodedText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

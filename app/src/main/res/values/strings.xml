@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EjerciciosPDM26Feb</string>
+    <string name="cociente">Cociente</string>
+    <string name="producto">Producto</string>
+    <string name="resta">Resta</string>
+    <string name="suma">Suma</string>
+</resources>
